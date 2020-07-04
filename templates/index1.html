@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amazon Price Monitering</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static', filename='favicon.ico')}}">
+  <style type="text/css">
+		body{
+			background: url(https://www.premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;	
+      background-attachment: fixed;
+		}
+    
+    form{
+    width: 100%;
+    max-width: 350px;
+    padding: 25px;
+    margin: 50px auto;
+    background-color: #f7fcfc;
+    border-radius: 15px;
+    }
+    
+    @media (min-width: 672px) {
+    html {
+    --column-count: 5;
+    }
+  }
+	</style>
+</head>
+<body class="col-">
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f7fcfc;">
+  <a class="navbar-brand" href="/">Amazon Price Monitoring</a>
+  </nav>  	 
+  <div>
+    <form method="post" action="/TryNow">
+      <div class="form-group">
+      <label for="URL">Enter URL:</label>
+      <input type="text" class="form-control" id="URL" name="URL" aria-describedby="urlhelp" required>
+          <small id="urlhelp" class="form-text text-muted">Enter the url of the amazon product you wish to moniter.</small>
+      </div>
+      <div class="form-group">
+      <label for="Budget">Enter Budget:</label>
+      <input type="text" class="form-control" id="Budget" name="Budget" required>
+      </div>
+      <div class="form-group">
+        <label for="Email">Enter Email address:</label>
+        <input type="email" class="form-control" id="Email" name="Email" aria-describedby="emailHelp" required>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <center><button type="submit" class="btn btn-primary">Submit</button>
+    </center>
+    </form>
+  </div>
+</body>
+</html>

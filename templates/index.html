@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amazon Price Monitering</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static', filename='favicon.ico')}}">
+
+  <style type="text/css">
+
+		body{
+			background: url(https://www.premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;	
+      background-attachment: fixed;
+		}
+    .jumbotron {
+    width: 100%;
+    max-width: 850px;
+    padding: 25px;
+    margin: 100px auto;
+    background-color: #f7fcfc;
+    }
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+	</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f7fcfc;">
+    <a class="navbar-brand" href="/">Amazon Price Monitoring</a>
+  </nav>
+  <div class="jumbotron shadow p-3 mb-5 bg-white rounded">
+    <h1>Welcome to Amazon Price Monitoring</h1>
+    <p>
+    </p>
+    <p> This website is used to track the Amazon Product of Your Choice.</p>
+    <div class="center">
+    <form action="/TryNow">
+      <button class="btn btn-primary">
+        Try Now!
+    </button>
+    </form>
+    </div>  
+  </div>
+</body>
+</html>
